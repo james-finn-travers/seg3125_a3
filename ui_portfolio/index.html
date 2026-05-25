@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Travers Portfolio</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Template -->
+  <template id="project-card-template">
+
+    <div class="card shadow-sm m-3" style="width: 20rem;">
+
+      <img class="card-img-top" />
+
+      <div class="card-body">
+
+        <h5 class="card-title"></h5>
+
+        <a class="btn btn-dark">
+          View Project
+        </a>
+
+      </div>
+    </div>
+
+  </template>
+
+
+  <!-- Web Component Definition -->
+  <script>
+    class ProjectCard extends HTMLElement {
+      connectedCallback() {
+        const template = document
+          .getElementById("project-card-template")
+          .content
+          .cloneNode(true);
+
+        const img = template.querySelector("img");
+        const title = template.querySelector(".card-title");
+        const link = template.querySelector("a");
+
+        const projectName = this.getAttribute("project");
+
+        img.src = this.getAttribute("image");
+        img.alt = this.getAttribute("title");
+
+        title.textContent = this.getAttribute("title");
+
+        link.href = `/${projectName}.html`;
+
+        this.appendChild(template);
+      }
+    }
+
+    customElements.define("project-card", ProjectCard);
+  </script>
+</head>
+
+<body class="container py-4">
+
+  <h1 class="mb-4">James Travers Portfolio</h1>
+  <img src="/images/james.jpg" alt="A photo of James">
+
+  <h2><i class="bi bi-person-vcard me-2"></i>About Me</h2>
+
+  <p>
+    I am a computer science student at the University of Ottawa. I got into computer and software development because of its ability to synthesize and communicate information.
+
+    My most recent position was at Alessa, a firm specializing in anti-money laundering technology, where I built a synthetic data generation tool to automate their data ingestion validation.
+
+    My most recent side project was building a real-time transaction analytics platform with anomaly detection.
+
+    Some of my hobbies outside programming include cooking and weightlifting.
+  </p>
+
+  <h2><i class="bi bi-gear-wide-connected me-2"></i>How I Work</h2>
+
+  <p>
+    I developed an interactive BI dashboard for a pipeline handling e-commerce transactions. This supported multiple real-time analytics such as: total transactions, total revenue, average transaction amount, and anomalous transaction count.
+
+    In addition, in the course SDS3386 - Data Science Lab, I was in a team of 2 where we developed an interactive analytics dashboard monitoring the trends of cyberattacks globally over the past 10 years, with customizable filters to deliver national sector-specific insights.
+
+    To gain a more comprehensive understanding of user interfaces, I am currently taking SEG3125 - Analysis and Design of User Interfaces.
+  </p>
+
+  <h2 class="mt-5"><i class="bi bi-folder2-open me-2"></i>UI Case Studies</h2>
+
+  <!-- Cards Container -->
+  <div class="d-flex flex-wrap">
+
+    <project-card
+      image="images/service.jpg"
+      title="Service App"
+      project="coming_soon"
+    ></project-card>
+
+    <project-card
+      image="images/memory_game.jpg"
+      title="Memory Game"
+      project="coming_soon"
+    ></project-card>
+
+    <project-card
+      image="images/ecommerce.jpg"
+      title="E-commerce Application"
+      project="coming_soon"
+    ></project-card>
+
+    <project-card
+      image="images/analytics.jpg"
+      title="Analytics Dashboard"
+      project="coming_soon"
+    ></project-card>
+
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+
+</html>
