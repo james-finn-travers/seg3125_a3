@@ -1,0 +1,83 @@
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question2$ ./question2 lru 4
+Lru 4 frame:
+Initial Frames
+----
+Page 0
+FAULT
+|7|-|-|-|
+Page 1
+FAULT
+|7|1|-|-|
+Page 2
+FAULT
+|7|1|2|-|
+Page 3
+FAULT
+|7|1|2|0|
+Page 4
+FAULT
+|9|1|2|0|
+Page 5
+|9|1|2|0|
+Page 6
+FAULT
+|9|7|2|0|
+Page 7
+FAULT
+|9|7|2|1|
+Page 8
+|9|7|2|1|
+Page 9
+FAULT
+|9|7|8|1|
+Page 10
+FAULT
+|9|3|8|1|
+Page 11
+|9|3|8|1|
+Page 12
+|9|3|8|1|
+Page 13
+|9|3|8|1|
+Page 14
+FAULT
+|9|3|8|5|
+Page 15
+|9|3|8|5|
+Page 16
+|9|3|8|5|
+Page 17
+|9|3|8|5|
+Page 18
+FAULT
+|9|6|8|5|
+Page 19
+|9|6|8|5|
+Page 20
+FAULT
+|9|6|0|5|
+Page 21
+|9|6|0|5|
+Page 22
+|9|6|0|5|
+Page 23
+FAULT
+|9|6|0|2|
+Page 24
+FAULT
+|9|1|0|2|
+14 Faults:
+Reference 0: page 7
+Reference 1: page 1
+Reference 2: page 2
+Reference 3: page 0
+Reference 4: page 9
+Reference 6: page 7
+Reference 7: page 1
+Reference 9: page 8
+Reference 10: page 3
+Reference 14: page 5
+Reference 18: page 6
+Reference 20: page 0
+Reference 23: page 2
+Reference 24: page 1

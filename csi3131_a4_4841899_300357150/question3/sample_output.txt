@@ -1,0 +1,9 @@
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question3$ ./producer 15
+Producer wrote 15 Catalan numbers.
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question3$ ./consumer
+Consumer read: 1 1 2 5 14 42 132 429 1430 4862 16796 58786 208012 742900 2674440 
+
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question3$ ./producer 5
+Producer wrote 5 Catalan numbers.
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question3$ ./consumer
+Consumer read: 1 1 2 5 14 

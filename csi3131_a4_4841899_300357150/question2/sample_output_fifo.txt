@@ -1,0 +1,81 @@
+james@JamesTLaptop:~/csi3131_a4_4841899_300357150/question2$ ./question2 fifo 6
+Fifo 6 frame:
+Initial Frames
+------
+Page 0
+FAULT
+|7|-|-|-|-|-|
+Page 1
+FAULT
+|7|8|-|-|-|-|
+Page 2
+FAULT
+|7|8|2|-|-|-|
+Page 3
+FAULT
+|7|8|2|1|-|-|
+Page 4
+FAULT
+|7|8|2|1|9|-|
+Page 5
+FAULT
+|7|8|2|1|9|0|
+Page 6 
+|7|8|2|1|9|0|
+Page 7 
+FAULT
+|5|8|2|1|9|0|
+Page 8 
+|5|8|2|1|9|0|
+Page 9 
+|5|8|2|1|9|0|
+Page 10 
+|5|8|2|1|9|0|
+Page 11 
+|5|8|2|1|9|0|
+Page 12 
+|5|8|2|1|9|0|
+Page 13 
+|5|8|2|1|9|0|
+Page 14 
+|5|8|2|1|9|0|
+Page 15 
+|5|8|2|1|9|0|
+Page 16 
+FAULT
+|5|6|2|1|9|0|
+Page 17 
+FAULT
+|5|6|8|1|9|0|
+Page 18 
+FAULT
+|5|6|8|3|9|0|
+Page 19 
+|5|6|8|3|9|0|
+Page 20 
+FAULT
+|5|6|8|3|1|0|
+Page 21 
+|5|6|8|3|1|0|
+Page 22 
+|5|6|8|3|1|0|
+Page 23 
+FAULT
+|5|6|8|3|1|4|
+Page 24 
+FAULT
+|0|6|8|3|1|4|
+13 Faults:
+Reference 0: page 7
+Reference 1: page 8
+Reference 2: page 2
+Reference 3: page 1
+Reference 4: page 9
+Reference 5: page 0
+Reference 7: page 5
+Reference 16: page 6
+Reference 17: page 8
+Reference 18: page 3
+Reference 20: page 1
+Reference 23: page 4
+Reference 24: page 0

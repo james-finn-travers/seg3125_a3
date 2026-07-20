@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/catalan_recursive_proof.aux": true,
+        "**/catalan_recursive_proof.log": true,
+        "**/catalan_recursive_proof.gz": true,
+        "**/catalan_recursive_proof.out": true
+    }
+}
